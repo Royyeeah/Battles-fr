@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+  @import url('http://fonts.cdnfonts.com/css/common-pixel');
+  body {
+    font-family: 'Common Pixel', sans-serif;
+  } 
+  #container {
+    display:grid; 
+    grid-template-columns: 18vw 18vw 18vw 18vw 18vw;
+  }
+
+  #level {
+    border:3px solid black;
+    height:15vh;
+    font-size:10vh;
+    text-align:center;
+  
+  }
+
+  #leave {
+    height:11vh;
+    width:20vw;
+    background-color:black;
+    color:white;
+    font-size:10vh;
+  }
+
+        
+</style>
+<body>
+    <embed src="AdhesiveWombat - 8 Bit Adventure.mp3" loop="true" autostart="true" width="2" height="0">
+    <center>
+    <div id="container">
+        <div style="background-color:#88ff00;" id="level" onmousedown="window.location.replace('lvlone.html')">Lvl 1</div>
+        <div style="background-color:#f6ff00;" id="level">Lvl 2</div>
+        <div style="background-color:#ffbb00;" id="level">Lvl 3</div>
+        <div style="background-color:#ff6200;" id="level">Lvl 4</div>
+        <div style="background-color:#ff0000" id="level">Lvl 5</div>
+    </div>
+    <div id="leave" onmousedown="leave()">Leave</div>
+    </center>
+
+    <script>
+      function leave() {
+        window.location.replace('mainmenu.html');
+      }
+    </script>
+</body>
+</html>
